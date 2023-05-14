@@ -1,0 +1,34 @@
+type: single # single|window, maybe add opt
+key: models #added to the csv names
+evaluation: evaluation #evaluation|evaluation_last|evaluation_multiple|evaluation_user_based|evaluation_user_based_multiple
+evaluation_by_algorithm_self: True
+data:
+  name: fiction #added in the end of the csv names
+  folder: data/fiction-with-attributes/prepared/
+#  folder: data/fiction-with-attributes/prepared/
+  prefix: fiction.dat.small.clicks.interaction_attributes
+#  slices: 5 #only window
+#  skip: [0,3] #only window
+  opts: {train_full_train_valid_test: True}
+
+results:
+  folder: results/next/fiction-with-attributes/
+#  folder: results/next/fiction-with-attributes/
+
+metrics:
+- class: accuracy.HitRate
+  length: [1,5,10,20]
+- class: accuracy.MRR
+  length: [1,5,10,20]
+- class: saver.Saver
+  length: [50]
+- class: time_memory_usage.Time_usage_training
+- class: time_memory_usage.Time_usage_testing
+#- class: time_memory_usage.Memory_usage
+
+algorithms:
+# ex with parameters
+# models
+- class: RepeatNet.repeat_net_module.RN
+    params: { embed_size: 100, hidden_size: 100, epochs: 10, lr: 0.001, train_batch_size: 1024, session_key: 'SessionId', item_key: 'ItemId'}
+    key: repeat_net_module

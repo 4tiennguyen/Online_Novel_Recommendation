@@ -23,4 +23,7 @@ STEP 2:
 STEP 3:
 - Open 'hybrid_stant06_NN.ipynb'
 - After loading libraries, change file paths to location (the two files in Step 1 and 2) they are saved
-- Go to Experiment section, change the file path in save_weighted_score() function
+- Go to Experiment section, change the file path in save_weighted_score() function  
+  
+ OPTION: 
+To run AR, `python run_confg_ar.py conf/in_for_fiction_rec_more/84_AR.yml`

@@ -26,5 +26,5 @@ STEP 3:
 - Go to Experiment section, change the file path in save_weighted_score() function  
   
  OPTION: Run AR
-To run AR, open `run_confg_ar.py`, and go to line 569 to change the file path. Then run `python run_confg_ar.py conf/in_for_fiction_rec_more/84_AR.yml`. The recommendation lists and scores are saved in .csv file. For examole, 'C:/Users/tttie/OneDrive/Desktop/CS 274/NovelNet-main/rar_base_dir/ar/ar.csv'  
+To run AR, open `run_confg_ar.py`, and go to line 569 to change the file path. Then run `python run_confg_ar.py conf/in_for_fiction_rec_more/84_AR.yml`. The recommendation lists and scores are saved in .csv file. For example, 'C:/Users/tttie/OneDrive/Desktop/CS 274/NovelNet-main/rar_base_dir/ar/ar.csv'  
 To run the hybrid mode (NN+AR), do the same as STEP 3 with 'hybrid_AR_NN.ipynb'

@@ -27,7 +27,8 @@ to calculate the final rankings for the recommendations. We
 experiment with different sets of weights to determine the best
 weights, and we demonstrate that, in the best case, the hybrid
 model (NovelNet and STAN) provides users with more accurate
-and relevant recommendations.
+and relevant recommendations.  
+**Please click [HERE](https://github.com/4tiennguyen/Online_Novel_Recommendation/blob/main/Report.pdf) to read the full report paper**
 # Requirements
 anaconda python==3.10.4 torch==1.13.1 scipy==1.22.3 python-dateutil==2.8.2 pytz==2022.2.1 certifi==2022.12.07 numpy==1.22.3 dill==0.3.3 pyyaml==6.0 networkx==3.0 scikit-learn==1.2.1 numexpr==2.8.4 keras==2.3.1 six==1.15.0 theano==1.0.3 pandas==1.2.4 psutil==5.8.0 pympler==0.9 tensorflow==2.3.0 tables==3.6.1 scikit-optimize==0.8.1 python-telegram-bot==13.5
 # Dataset

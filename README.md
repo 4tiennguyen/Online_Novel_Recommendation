@@ -1,5 +1,33 @@
-# Novel_recomendation
-A hybrid approach on Onlime Novel Recommendation System
+# A Hybrid Approach for Online Novel Recommendation
+Book recommendation systems focus on helping
+users discover new books based on their previous preferences.
+However, on novel reading platforms such as Wattpad, where
+a user finds and reads novels directly on the websites, the
+interactions between the user and the platform become more
+complex. The user interactions are not only whether the users
+choose to find a book and leave a review, a novel reading
+platform can also keep track of a user’s consumption of a specific
+novel. A user on such a platform usually consumes the novel
+in multiple sessions. Subsequently, a recommendation system
+on such a reading platform should be able to recommend the
+novels that are consumed by users as well as new novels at the
+same time. Previous work, such as NovelNet, shows that,
+by capturing these behaviors for each user session in a novel
+reading platform, the authors are able to improve the quality of
+their recommendation system. However, such recommendation
+systems might overlook the fact that multiple users can have
+similar sessions, and Sequence and Time Aware Neighborhood
+(STAN) [2] recommendation system shows that matching user
+sessions also produce high-quality recommendations. In our
+paper, we propose a hybrid model that captures the best of
+both worlds. Specifically, for each user session, we obtain the
+ranked recommendations from both NovelNet and STAN, or
+NovelNet and Association Rule (AR), We use a weighted sum
+to calculate the final rankings for the recommendations. We
+experiment with different sets of weights to determine the best
+weights, and we demonstrate that, in the best case, the hybrid
+model (NovelNet and STAN) provides users with more accurate
+and relevant recommendations.
 # Requirements
 anaconda python==3.10.4 torch==1.13.1 scipy==1.22.3 python-dateutil==2.8.2 pytz==2022.2.1 certifi==2022.12.07 numpy==1.22.3 dill==0.3.3 pyyaml==6.0 networkx==3.0 scikit-learn==1.2.1 numexpr==2.8.4 keras==2.3.1 six==1.15.0 theano==1.0.3 pandas==1.2.4 psutil==5.8.0 pympler==0.9 tensorflow==2.3.0 tables==3.6.1 scikit-optimize==0.8.1 python-telegram-bot==13.5
 # Dataset
